@@ -59,7 +59,6 @@ CREATE TABLE produits (
 Ouvrez le fichier `fonctions.php` et modifiez les informations de connexion à la base de données selon votre configuration :
 
 ```php
-<?php
 $host = 'localhost';
 $dbname = 'Nom de la bdd';
 $user = 'Utilisateur (root)';
