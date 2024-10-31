@@ -1,6 +1,6 @@
 # Projet PHP procédural et POO
 
-Ce projet est une application de gestion de produits développée en PHP
+Ce projet est une application de gestion de produits développée à 3/4 en PHP
 
 ## Fonctionnalités
 
