@@ -1,4 +1,4 @@
-# Projet PHP
+# Projet PHP procédural et POO
 
 Ce projet est une application de gestion de produits développée en PHP
 
