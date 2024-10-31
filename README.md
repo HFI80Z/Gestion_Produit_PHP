@@ -35,13 +35,15 @@ Pour recréer la base de données du projet, utilisez les commandes SQL ci-desso
 -- Créer la base de données
 CREATE DATABASE a_rendre;
 USE a_rendre;
-
+```
+```
 -- Créer la table des catégories
 CREATE TABLE categories (
     id INT PRIMARY KEY AUTO_INCREMENT,
     titre VARCHAR(255) NOT NULL
 );
-
+```
+```
 -- Créer la table des produits avec une clé étrangère référant aux catégories
 CREATE TABLE produits (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -51,3 +53,4 @@ CREATE TABLE produits (
     categorie INT,
     FOREIGN KEY (categorie) REFERENCES categories(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
+```
