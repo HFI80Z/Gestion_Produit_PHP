@@ -1,4 +1,4 @@
-# Gestion de Produits et Catégories
+# Projet PHP
 
 Ce projet est une application de gestion de produits développée en PHP
 
@@ -11,9 +11,9 @@ Ce projet est une application de gestion de produits développée en PHP
 
 ## Prérequis
 
-- **PHP** (version 7.4 ou supérieure)
-- **MySQL** (version 5.7 ou supérieure)
-- **phpMyAdmin** (version 5.2.1)
+- **PHP** 
+- **MySQL** 
+- **phpMyAdmin** 
 - **Wampserver54**
 
 ## Installation
@@ -27,9 +27,7 @@ git clone https://github.com/votre_nom_d_utilisateur/nom_du_projet.git
 cd nom_du_projet
 ```
 
-## Structure de la Base de Données
-
-Pour recréer la base de données du projet, utilisez les commandes SQL ci-dessous.
+## Reproduire la base de donnée
 
 ```sql
 -- Créer la base de données
@@ -37,14 +35,14 @@ CREATE DATABASE a_rendre;
 USE a_rendre;
 ```
 ```sql
--- Créer la table des catégories
+-- Créer la table categories
 CREATE TABLE categories (
     id INT PRIMARY KEY AUTO_INCREMENT,
     titre VARCHAR(255) NOT NULL
 );
 ```
 ```sql
--- Créer la table des produits avec une clé étrangère référant aux catégories
+-- Créer la table produits avec la clé étrangère référante
 CREATE TABLE produits (
     id INT PRIMARY KEY AUTO_INCREMENT,
     titre VARCHAR(255) NOT NULL,
@@ -54,9 +52,9 @@ CREATE TABLE produits (
     FOREIGN KEY (categorie) REFERENCES categories(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 ```
-### Configurer la connexion à la base de données
+### Mettre à jour la connexion à la base de donnée
 
-Ouvrez le fichier `fonctions.php` et modifiez les informations de connexion à la base de données selon votre configuration :
+Ouvrez le fichier `fonctions.php` et modifiez $dbname, $user et $pass en fonction du nom de la base de donnée que vous avez mis ainsi que de vos identifiants Phpmyadmin :
 
 ```php
 $host = 'localhost';
