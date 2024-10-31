@@ -54,3 +54,14 @@ CREATE TABLE produits (
     FOREIGN KEY (categorie) REFERENCES categories(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 ```
+### Configurer la connexion à la base de données
+
+Ouvrez le fichier `fonctions.php` et modifiez les informations de connexion à la base de données selon votre configuration :
+
+```php
+<?php
+$host = 'localhost';
+$dbname = '#Nom de la bdd';
+$user = '';
+$pass = '';
+```
