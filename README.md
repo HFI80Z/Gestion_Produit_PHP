@@ -22,4 +22,32 @@ Ce projet est une application de gestion de produits développée en PHP
 
 ```bash
 git clone https://github.com/votre_nom_d_utilisateur/nom_du_projet.git
+```
+```bash
 cd nom_du_projet
+```
+
+## Structure de la Base de Données
+
+Pour recréer la base de données du projet, utilisez les commandes SQL ci-dessous.
+
+```sql
+-- Créer la base de données
+CREATE DATABASE a_rendre;
+USE a_rendre;
+
+-- Créer la table des catégories
+CREATE TABLE categories (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titre VARCHAR(255) NOT NULL
+);
+
+-- Créer la table des produits avec une clé étrangère référant aux catégories
+CREATE TABLE produits (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titre VARCHAR(255) NOT NULL,
+    description TEXT,
+    prix NUMERIC(10, 2) NOT NULL,
+    categorie INT,
+    FOREIGN KEY (categorie) REFERENCES categories(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
