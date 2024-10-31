@@ -1,4 +1,3 @@
-/* Style général */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -7,7 +6,6 @@ body {
     padding: 0;
 }
 
-/* Style du header et du menu de navigation */
 header {
     background-color: #007bff;
     padding: 10px 0;
@@ -32,7 +30,6 @@ header nav a:hover {
     border-radius: 5px;
 }
 
-/* Style du contenu principal */
 h1, h2 {
     text-align: center;
     color: #007bff;
@@ -80,7 +77,6 @@ form button:hover {
     background-color: #0056b3;
 }
 
-/* Style des listes d'éléments */
 ul {
     max-width: 600px;
     margin: 20px auto;
@@ -110,7 +106,6 @@ ul li a:hover {
     color: #0056b3;
 }
 
-/* Style du footer */
 footer {
     text-align: center;
     padding: 10px;

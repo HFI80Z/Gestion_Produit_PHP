@@ -1,7 +1,6 @@
 <?php
-include 'fonctions.php'; // Assurez-vous que ce fichier inclut la connexion $pdo
+include 'fonctions.php'; // ça doit inclure la connexion $pdo
 
-// Récupérer les informations de l'élément à modifier
 if (isset($_GET['type']) && isset($_GET['id'])) {
     $type = $_GET['type'];
     $id = $_GET['id'];
@@ -17,7 +16,6 @@ if (isset($_GET['type']) && isset($_GET['id'])) {
     }
 }
 
-// Mettre à jour l'élément dans la base de données
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($type === 'categorie') {
         $titre = $_POST['titre'];
