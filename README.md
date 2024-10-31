@@ -63,4 +63,13 @@ $host = 'localhost';
 $dbname = 'Nom de la bdd';
 $user = 'Utilisateur (root)';
 $pass = 'Le mot de passe (root ou rien)';
+
+#J'ai créer ces variables pour que ce soit plus simple d'utilisation
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Erreur de connexion : " . $e->getMessage());
+}
 ```
