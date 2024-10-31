@@ -62,7 +62,7 @@ $dbname = 'Nom de la bdd';
 $user = 'Utilisateur (root)';
 $pass = 'Le mot de passe (root ou rien)';
 
-#J'ai créer ces variables pour que ce soit plus simple d'utilisation
+#Vous avez juste à changer les valeurs ci-dessus après les "="
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
