@@ -61,7 +61,7 @@ Ouvrez le fichier `fonctions.php` et modifiez les informations de connexion à l
 ```php
 <?php
 $host = 'localhost';
-$dbname = '#Nom de la bdd';
-$user = '';
-$pass = '';
+$dbname = 'Nom de la bdd';
+$user = 'Utilisateur (root)';
+$pass = 'Le mot de passe (root ou rien)';
 ```
